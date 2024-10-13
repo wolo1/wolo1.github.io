@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple AR - A Web based AR for A-Frame</title>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/gh/akbartus/Simple-AR/dist/0.1.2/simple-ar.min.js"
+      onload="onWasmLoaded();"
+    ></script>
+    <a-scene>
+
+      <!-- This model will always appear -->
+      <a-gltf-model
+          src="https://cdn.glitch.me/4d6a4729-bd3d-4e4b-bc6d-cf1bf6dc1ce8/FINALCHURCHSMALL.glb?v=1727354657100"
+          position="0 0 -1"
+          scale="0.01 0.01 0.01"
+          rotation="0 90 0"
+      ></a-gltf-model>
+        
+
+
+      <a-camera position="0 0 0"></a-camera>
+    </a-scene>
+  </body>
+</html>
